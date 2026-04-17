@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekker Hustles | The R100 Blueprint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --hustle-yellow: #FFD700;
+            --matte-black: #0F0F0F;
+            --card-gray: #151515;
+            --border-gray: #252525;
+            --text-dim: #888;
+        }
+
+        body {
+            background-color: var(--matte-black);
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* The Logo Container */
+        .logo-img {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            display: block;
+            /* This glow makes the circular logo pop on the black background */
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.2));
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin: 0;
+            letter-spacing: -1px;
+            color: var(--hustle-yellow);
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1rem;
+            color: var(--text-dim);
+            margin: 15px 0 30px;
+            line-height: 1.5;
+        }
+
+        /* Blueprint Status Terminal */
+        .blueprint-status {
+            background: var(--card-gray);
+            border: 1px solid var(--border-gray);
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .status-item { margin-bottom: 8px; }
+        .status-item:last-child { margin-bottom: 0; }
+        .checked { color: var(--hustle-yellow); font-weight: bold; }
+
+        /* Form Styling */
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        input[type="email"] {
+            background: #1A1A1A;
+            border: 2px solid var(--border-gray);
+            padding: 18px;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="email"]:focus {
+            border-color: var(--hustle-yellow);
+        }
+
+        button {
+            background-color: var(--hustle-yellow);
+            color: var(--matte-black);
+            border: none;
+            padding: 18px;
+            border-radius: 8px;
+            font-weight: 900;
+            font-size: 1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.15);
+        }
+
+        .footer-tag {
+            margin-top: 50px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="LekkerLogo.png" alt="Lekker Hustles" class="logo-img">
+
+        <h1>THE R100 BLUEPRINT</h1>
+        <p>Turning minimalist code into a million rand system. Join the 10,000.</p>
+
+        <div class="blueprint-status">
+            <div class="status-item"><span class="checked">[✓]</span> LOGISTICS VETTED</div>
+            <div class="status-item"><span class="checked">[✓]</span> GITHUB STACK READY</div>
+            <div class="status-item"><span class="checked">[ ]</span> SCALING 10,000 FOUNDERS</div>
+        </div>
+
+        <form class="form-container" action="https://formspree.io/f/your-id" method="POST">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Join the Waitlist</button>
+        </form>
+
+        <div class="footer-tag">
+            Phase 01: Deployment
+        </div>
+    </div>
+
+</body>
+</html>
